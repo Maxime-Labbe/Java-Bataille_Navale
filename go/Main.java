@@ -60,7 +60,7 @@ public class Main {
             plateauJ2.bateauInListRandom(listBateauJ2);
         }
         System.out.println("En console ou graphique ?");
-        String consoleOrGraph = "graphique";
+        String consoleOrGraph = scanner.next();
         if (consoleOrGraph.toLowerCase().equals("console")) {
             /* Méthode console */
             boolean run = false;
@@ -155,5 +155,6 @@ public class Main {
             /* Méthode graphique */
         }
         scanner.close();
+        System.exit(0);
     }
 }
